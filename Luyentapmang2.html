@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="GetValue1()">Bai 1</button>
+<br>
+<button onclick="GetValue2()">Bai 2</button>
+<br>
+<button onclick="GetValue3()">Bai 3</button>
+<br>
+<button onclick="GetValue4()">Bai 4</button>
+<br>
+<button onclick="GetValue5()">Bai 5</button>
+<br>
+<button onclick="GetValue6()">Bai 6</button>
+<br>
+</body>
+<script>
+    function GetValue1() {
+        let a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+        for (let i = 0; i < a.length; i++) {
+            console.log("row" + i);
+            for (let j = 0; j < a[i].length; j++) {
+                console.log(a[i][j]);
+            }
+        }
+    }
+
+    function GetValue2() {
+        let arr = ['c', 's', 'c', '2', '6', '1'];
+        arr.reverse();
+        console.log(arr)
+    }
+
+    function GetValue3() {
+        let arr1 = ['c', 's', 'c', 2, 6, 1]
+        let count = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            if (typeof arr1[i] == 'string') {
+                count++
+            }
+        }
+        console.log(count)
+    }
+
+    function GetValue4() {
+        let arr2 = "tai lieu hoc tap java"
+        console.log(arr2.split(" ").length)
+    }
+
+    function GetValue5() {
+        let string1 = prompt("Nhap vao 1 chuoi bat ki");
+        let string2 = prompt("Nhap vao 1 chuoi bat ki");
+        if (string1 === string2) {
+            alert("2 chuoi giong nhau")
+        } else {
+            alert("2 chuoi khong giong nhau")
+        }
+    }
+
+    function GetValue6() {
+        let arr6 = prompt("Nhap vao 1 mang bat ki")
+        let arr7 = arr6.replaceAll("-", "_");
+        console.log(arr7)
+    }
+</script>
+</html>
